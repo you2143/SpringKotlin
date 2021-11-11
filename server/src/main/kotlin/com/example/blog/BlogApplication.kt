@@ -1,11 +1,13 @@
-package com.example.demo
+package com.example.blog
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class DemoApplication
+class BlogApplication
 
 fun main(args: Array<String>) {
-	runApplication<DemoApplication>(*args)
+  runApplication<BlogApplication>(*args) {
+    setBannerMode(Banner.Mode.OFF)
+  }
 }

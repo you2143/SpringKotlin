@@ -1,5 +1,14 @@
 参考にしたURL
+// spring+kotolinの起動準備。
+// 「初めての Kotlin コントローラーの作成」項目までを実施
 https://spring.pleiades.io/guides/tutorials/spring-boot-kotlin/
+
+// dockerでSpringをビルドして実行する手順
+https://zenn.dev/junki555/articles/1073408293050f
 
 入れたVSCode拡張機能
 Spring Boot Extension Pack
+→Springを開発するときに便利らしい
+
+mustache
+→mustacheファイルを使用してHTMLページを作るときにシンタックスハイライトがきいてべんり
