@@ -3,3 +3,5 @@
 3.続けてコマンド「docker-compose exec app bash」を実行
 4.続けてコマンド「sh gradlew build」を実行
   ※ここで10分近くかかる
+5.続けてコマンド「java -jar build/libs/demo-0.0.1-SNAPSHOT.jar」を実行
+6.ブラウザを開き、「http://localhost:8080/」へアクセスして「Hello World」と表示されればOK
