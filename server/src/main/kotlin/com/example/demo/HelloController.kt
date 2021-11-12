@@ -1,12 +1,14 @@
-package com.example.demo
+package com.example.demo.controller
  
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RestController
- 
-@RestController
+import org.springframework.stereotype.Controller
+import org.springframework.ui.Model
+import org.springframework.web.bind.annotation.*
+
+@Controller
 class HelloController {
     @GetMapping("/")
-    fun hello(): String {
-        return "Hello World"
+    fun Hello(model: Model): String {
+        model.addAttribute("message", "Hello Test")
+        return "Hello"
     }
 }

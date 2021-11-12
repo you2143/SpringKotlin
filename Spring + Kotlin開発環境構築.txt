@@ -1,10 +1,12 @@
 参考にしたURL
 // spring+kotolinの起動準備。
-// 「初めての Kotlin コントローラーの作成」項目までを実施
 https://spring.pleiades.io/guides/tutorials/spring-boot-kotlin/
 
 // dockerでSpringをビルドして実行する手順
 https://zenn.dev/junki555/articles/1073408293050f
+
+// kotolinにtymeleafを導入
+https://qiita.com/takkii1010/items/c9f83966f9088923a6e7
 
 入れたVSCode拡張機能
 Spring Boot Extension Pack
