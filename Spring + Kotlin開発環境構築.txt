@@ -8,9 +8,16 @@ https://zenn.dev/junki555/articles/1073408293050f
 // kotolinにtymeleafを導入
 https://qiita.com/takkii1010/items/c9f83966f9088923a6e7
 
+参考にした書籍
+// Kotlin + Spling
+Kotolin Webアプリケーション
+新しいサーバサイトプログラミング
+著：長澤太郎
+
+//気を付けること
+application.properties内に「spring.mvc.hiddenmethod.filter.enabled=true」を追記
+HTTPのPUT/DELETE/PATCHメソッドを使えるようにする設定
+
 入れたVSCode拡張機能
 Spring Boot Extension Pack
 →Springを開発するときに便利らしい
-
-mustache
-→mustacheファイルを使用してHTMLページを作るときにシンタックスハイライトがきいてべんり
