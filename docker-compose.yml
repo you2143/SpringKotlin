@@ -8,3 +8,26 @@ services:
     volumes:
       - ./server:/srv:cached
     working_dir: /srv
+    depends_on:
+      - db
+    networks:
+      - dbnet
+      
+  db:
+    container_name: spring_db
+    hostname: spring_mysql_host
+    image: "mysql:5.7"
+    expose:
+      - "3306"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "admin"
+      MYSQL_USER: "springuser"
+      MYSQL_PASSWORD: "ThePassword"
+      MYSQL_DATABASE: "springDatabase"
+    networks:
+      - dbnet
+
+networks:
+  dbnet:

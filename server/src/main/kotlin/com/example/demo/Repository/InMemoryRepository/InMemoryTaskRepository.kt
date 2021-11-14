@@ -4,7 +4,7 @@ import com.example.demo.model.Task
 import com.example.demo.repository.ITaskRepository
 import org.springframework.stereotype.Repository
 
-@Repository
+// @Repository
 class InMemoryTaskRepository : ITaskRepository {
 
     private val tasks: MutableList<Task> = mutableListOf()

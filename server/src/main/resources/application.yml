@@ -1,0 +1,40 @@
+#spring:
+#  profiles:
+#    active: localhost
+
+---
+spring:
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+  datasource:
+    url: jdbc:mysql://spring_db/springDatabase
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+  sql:
+    init:
+      mode: always
+      schema-locations:
+      - classpath:database/schema.sql
+#      data-locations:
+#      - classpath:database/data.sql
+      encoding: utf-8
+
+#---
+#spring:
+#  profiles: docker-compose
+#  datasource:
+#    url: jdbc:mysql://dbserver/kotlin_restapi_db
+#    username: user
+#    password: password
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+
